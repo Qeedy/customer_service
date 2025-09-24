@@ -35,7 +35,7 @@ public class SecurityConfig {
                         .requestMatchers("/swagger-ui/**", "/v3/api-docs/**").permitAll()
                         
                         // Customer service endpoints - Allow all for testing
-                        .requestMatchers("/api/customers/**").permitAll()
+                        .requestMatchers("/api/customers/**").authenticated()
                         
                         // All other requests require authentication
                         .anyRequest().authenticated()
