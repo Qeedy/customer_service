@@ -126,7 +126,7 @@ public class CustomerService {
     public Page<CustomerSummaryResponse> getAllCustomersSummary(Pageable pageable) {
         log.info("Fetching all customers summary with pagination");
         // Use universal search method with default values (no filters)
-        Page<Customer> customers = customerRepository.searchCustomers("", "ALL", "ALL", "ALL", "ALL", pageable);
+        Page<Customer> customers = customerRepository.searchCustomers("", null, null, null, null, pageable);
         return customers.map(customerMapper::toSummaryResponse);
     }
     
