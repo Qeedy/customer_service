@@ -1,5 +1,6 @@
 package com.projectlos.customer_service.dto.request;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -76,7 +77,7 @@ public class CustomerRequest {
     
     @NotNull(message = "Date of birth is required")
     @Schema(description = "Customer date of birth", example = "1990-01-01T00:00:00")
-    private LocalDateTime dateOfBirth;
+    private LocalDate dateOfBirth;
     
     @NotNull(message = "Gender is required")
     @Schema(description = "Customer gender", example = "MALE")

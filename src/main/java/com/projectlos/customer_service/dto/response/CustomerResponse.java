@@ -1,5 +1,6 @@
 package com.projectlos.customer_service.dto.response;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
@@ -65,7 +66,7 @@ public class CustomerResponse {
     private String country;
     
     @Schema(description = "Customer date of birth", example = "1990-01-01T00:00:00")
-    private LocalDateTime dateOfBirth;
+    private LocalDate dateOfBirth;
     
     @Schema(description = "Customer gender", example = "MALE")
     private Gender gender;

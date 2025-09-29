@@ -16,6 +16,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.UUID;
@@ -55,7 +56,7 @@ class CustomerServiceTest {
                 .city("Jakarta")
                 .province("DKI Jakarta")
                 .postalCode("12190")
-                .dateOfBirth(LocalDateTime.now().minusYears(30))
+                .dateOfBirth(LocalDate.now().minusYears(30))
                 .gender(Gender.MALE)
                 .maritalStatus(MaritalStatus.SINGLE)
                 .build();
@@ -73,7 +74,7 @@ class CustomerServiceTest {
                 .city("Jakarta")
                 .province("DKI Jakarta")
                 .postalCode("12190")
-                .dateOfBirth(LocalDateTime.now().minusYears(30))
+                .dateOfBirth(LocalDate.now().minusYears(30))
                 .gender(Gender.MALE)
                 .maritalStatus(MaritalStatus.SINGLE)
                 .createdAt(LocalDateTime.now())
@@ -103,7 +104,7 @@ class CustomerServiceTest {
                 .city("Jakarta")
                 .province("DKI Jakarta")
                 .postalCode("12190")
-                .dateOfBirth(LocalDateTime.now().minusYears(30))
+                .dateOfBirth(LocalDate.now().minusYears(30))
                 .gender(Gender.MALE)
                 .maritalStatus(MaritalStatus.SINGLE)
                 .createdAt(LocalDateTime.now())
@@ -147,7 +148,7 @@ class CustomerServiceTest {
                 .city("Jakarta")
                 .province("DKI Jakarta")
                 .postalCode("12190")
-                .dateOfBirth(LocalDateTime.now().minusYears(30))
+                .dateOfBirth(LocalDate.now().minusYears(30))
                 .gender(Gender.MALE)
                 .maritalStatus(MaritalStatus.SINGLE)
                 .createdAt(LocalDateTime.now())
